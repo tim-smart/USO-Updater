@@ -56,6 +56,11 @@ if ( $days < 1 )
 $hours = $days * 24;
 unset( $days );
 
+if ( isset( $_GET['api'] ) && ( (int)$_GET['api'] === 1 || strtolower( $_GET['api']) === 'true' ) )
+	$api = true;
+else
+	$api = false;
+
 if ( isset( $meta["unlisted"] ) )
 	$_GET["update"] = "show";
 
