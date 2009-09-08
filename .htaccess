@@ -1,0 +1,9 @@
+#Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+# The Friendly URLs part
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} ^.*?\.js.*$
+RewriteRule ^(.*?)\.js(?:\?([^#]*))?.*$ index.php?scriptid=$1&$2 [L,QSA]
