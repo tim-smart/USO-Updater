@@ -66,10 +66,10 @@ if ( isset( $meta["unlisted"] ) )
 
 switch ( isset( $_GET["update"] ) ? strtolower( $_GET["update"] ) : "show" ) {
 	case 'update':
-		$update_url = "https://userscripts.org/scripts/source/" . $script_id . ".user.js?update.user.js";
+		$update_url = "http://userscripts.org/scripts/source/" . $script_id . ".user.js?update.user.js";
 		break;
 	case 'install':
-		$update_url = "https://userscripts.org/scripts/source/" . $script_id . ".user.js";
+		$update_url = "http://userscripts.org/scripts/source/" . $script_id . ".user.js";
 		break;
 	case 'show':
 	default:
