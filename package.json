@@ -1,0 +1,8 @@
+{ "name"            : "uso_updater"
+, "version"         : "0.3.0"
+, "private"         : true
+, "dependencies"    :
+  { "express"       : "2.x"
+  }
+, "main"            : "./app"
+}
